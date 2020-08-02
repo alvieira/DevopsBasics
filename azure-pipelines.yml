@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- master
+- azure-pipelines4
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -30,3 +30,5 @@ steps:
   inputs:
     artifactName: 'war'
     pathToPublish: '$(build.artifactStagingDirectory)'
+
+
